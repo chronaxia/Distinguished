@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Distinguished</string>
+    <string name="my_customers">我的客户</string>
+    <string name="bank_customers">银行客户</string>
+    <string name="system_setting">个人中心</string>
+    <string-array name="title">
+        <item>@string/my_customers</item>
+        <item>@string/bank_customers</item>
+        <item>@string/system_setting</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

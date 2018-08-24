@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_upload_task"
+        android:enabled="true"
+        android:icon="@drawable/my_customer_icon"
+        android:title="@string/my_customers"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_my_task"
+        android:enabled="true"
+        android:icon="@drawable/bank_customer_icon"
+        android:title="@string/bank_customers"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_setting"
+        android:enabled="true"
+        android:icon="@drawable/setting_icon"
+        android:title="@string/system_setting"
+        app:showAsAction="ifRoom" />
+</menu>

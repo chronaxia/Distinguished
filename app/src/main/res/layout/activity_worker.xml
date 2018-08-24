@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.miaxis.distinguished.view.activity.WorkerActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/tb_worker"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:titleTextColor="@color/black"
+            app:theme="@style/ThemeOverlay.AppCompat.Light"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <View
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="2px"
+        android:background="@color/silver"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:layout_width="2px"
+            android:layout_height="40dp"
+            android:background="@color/silver"/>
+
+        <TextView
+            android:text="所属机构"
+            android:background="@color/gray_light"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+
+        <View
+            android:layout_width="2px"
+            android:layout_height="40dp"
+            android:background="@color/silver"/>
+
+        <TextView
+            android:id="@+id/tv_worker_org"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="match_parent" />
+
+        <View
+            android:layout_width="2px"
+            android:layout_height="40dp"
+            android:background="@color/gray_light"/>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="2px"
+        android:background="@color/silver"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:layout_width="2px"
+            android:layout_height="40dp"
+            android:background="@color/silver"/>
+
+        <TextView
+            android:text="员工编号"
+            android:textSize="16sp"
+            android:background="@color/gray_light"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+
+        <View
+            android:layout_width="2px"
+            android:layout_height="40dp"
+            android:background="@color/silver"/>
+
+        <TextView
+            android:id="@+id/tv_worker_code"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="match_parent" />
+
+        <View
+            android:layout_width="2px"
+            android:layout_height="40dp"
+            android:background="@color/silver"/>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="2px"
+        android:background="@color/silver"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:layout_width="2px"
+            android:layout_height="40dp"
+            android:background="@color/silver"/>
+
+        <TextView
+            android:text="员工姓名"
+            android:textSize="16sp"
+            android:background="@color/gray_light"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+
+        <View
+            android:layout_width="2px"
+            android:layout_height="40dp"
+            android:background="@color/silver"/>
+
+        <TextView
+            android:id="@+id/tv_worker_name"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="match_parent" />
+
+        <View
+            android:layout_width="2px"
+            android:layout_height="40dp"
+            android:background="@color/silver"/>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="2px"
+        android:background="@color/silver"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:layout_width="2px"
+            android:layout_height="40dp"
+            android:background="@color/silver"/>
+
+        <TextView
+            android:text="员工账号"
+            android:textSize="16sp"
+            android:background="@color/gray_light"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+
+        <View
+            android:layout_width="2px"
+            android:layout_height="40dp"
+            android:background="@color/silver"/>
+
+        <TextView
+            android:id="@+id/tv_worker_username"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="match_parent" />
+
+        <View
+            android:layout_width="2px"
+            android:layout_height="40dp"
+            android:background="@color/silver"/>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="2px"
+        android:background="@color/silver"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:layout_width="2px"
+            android:layout_height="40dp"
+            android:background="@color/silver"/>
+
+        <TextView
+            android:text="联系电话"
+            android:textSize="16sp"
+            android:background="@color/gray_light"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+
+        <View
+            android:layout_width="2px"
+            android:layout_height="40dp"
+            android:background="@color/silver"/>
+
+        <FrameLayout
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_worker_mobile"
+                android:textSize="16sp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+            <ImageView
+                android:id="@+id/iv_edit_mobile"
+                android:src="@drawable/ic_action_edit"
+                android:layout_gravity="right|center"
+                android:paddingEnd="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </FrameLayout>
+
+        <View
+            android:layout_width="2px"
+            android:layout_height="40dp"
+            android:background="@color/silver"/>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="2px"
+        android:background="@color/silver"/>
+
+    <!--<Space-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:layout_weight="1"/>-->
+
+    <!--<Button-->
+        <!--android:id="@+id/btn_edit_mobile"-->
+        <!--android:background="@drawable/blue_btn_bg"-->
+        <!--android:textSize="16sp"-->
+        <!--android:textColor="@color/white"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="修改联系电话"/>-->
+
+</LinearLayout>

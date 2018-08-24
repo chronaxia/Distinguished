@@ -1,0 +1,200 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_bg"
+    android:orientation="vertical">
+
+    <View
+        android:background="@color/gray_light"
+        android:layout_width="match_parent"
+        android:layout_height="1px"/>
+
+    <LinearLayout
+        android:padding="@dimen/content_padding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:background="@color/maincolor"
+        android:clickable="true"
+        android:focusable="true"
+        android:elevation="@dimen/common_elevation">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_gravity="center"
+            android:src="@drawable/icon_header"
+            android:gravity="center"
+            app:civ_border_width="1dp"
+            app:civ_border_color="@color/white"
+            android:focusable="false"/>
+
+        <LinearLayout
+            android:layout_marginStart="@dimen/content_padding"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:focusable="false">
+
+            <TextView
+                android:hint="员工姓名"
+                android:id="@+id/tv_setting_worker_name"
+                android:textSize="20sp"
+                android:textColor="@color/dark"
+                android:paddingStart="20dp"
+                android:layout_gravity="start|top"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:hint="员工编号"
+                android:id="@+id/tv_setting_worker_code"
+                android:textSize="14sp"
+                android:textColor="@color/dark"
+                android:paddingStart="20dp"
+                android:layout_gravity="start|bottom"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:background="@color/gray_light"
+        android:layout_width="match_parent"
+        android:layout_height="1px"/>
+
+    <LinearLayout
+        android:id="@+id/ll_worker_message"
+        android:orientation="horizontal"
+        android:paddingStart="30dp"
+        style="@style/l_personal_item">
+
+        <ImageView
+            android:src="@drawable/user"
+            android:layout_gravity="center_vertical"
+            android:scaleType="fitCenter"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+
+        <TextView
+            style="@style/tv_personal_item"
+            android:paddingStart="30dp"
+            android:text="个人信息"/>
+
+    </LinearLayout>
+
+    <View
+        android:background="@color/gray_light"
+        android:layout_width="match_parent"
+        android:layout_height="1px"/>
+
+    <LinearLayout
+        android:id="@+id/ll_edit_password"
+        android:orientation="horizontal"
+        android:paddingStart="30dp"
+        style="@style/l_personal_item">
+
+        <ImageView
+            android:src="@drawable/edit"
+            android:layout_gravity="center_vertical"
+            android:scaleType="fitCenter"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+
+        <TextView
+            style="@style/tv_personal_item"
+            android:paddingStart="30dp"
+            android:text="修改密码"/>
+
+    </LinearLayout>
+
+    <View
+        android:background="@color/gray_light"
+        android:layout_width="match_parent"
+        android:layout_height="1px"/>
+
+    <LinearLayout
+        android:id="@+id/ll_customer_service"
+        android:orientation="horizontal"
+        android:paddingStart="30dp"
+        style="@style/l_personal_item">
+
+        <ImageView
+            android:src="@drawable/customer_service"
+            android:layout_gravity="center_vertical"
+            android:scaleType="fitCenter"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+
+        <TextView
+            style="@style/tv_personal_item"
+            android:paddingStart="30dp"
+            android:text="联系客服"/>
+
+    </LinearLayout>
+
+    <View
+        android:background="@color/gray_light"
+        android:layout_width="match_parent"
+        android:layout_height="1px"/>
+
+    <LinearLayout
+        android:id="@+id/ll_question"
+        android:orientation="horizontal"
+        android:paddingStart="30dp"
+        style="@style/l_personal_item">
+
+        <ImageView
+            android:src="@drawable/help"
+            android:layout_gravity="center_vertical"
+            android:scaleType="fitCenter"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+
+        <TextView
+            style="@style/tv_personal_item"
+            android:paddingStart="30dp"
+            android:text="常见问题"/>
+
+    </LinearLayout>
+
+    <View
+        android:background="@color/gray_light"
+        android:layout_width="match_parent"
+        android:layout_height="1px"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_padding" />
+
+    <LinearLayout
+        android:id="@+id/ll_logout"
+        android:orientation="horizontal"
+        style="@style/l_personal_item">
+
+        <ImageView
+            android:visibility="invisible"
+            android:layout_gravity="center_vertical"
+            android:scaleType="fitCenter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            style="@style/tv_personal_item"
+            android:gravity="center"
+            android:textColor="@color/red"
+            android:text="退出登录"/>
+
+    </LinearLayout>
+
+</LinearLayout>
